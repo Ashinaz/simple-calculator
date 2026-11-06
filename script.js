@@ -16,3 +16,9 @@ const mathOperation = {
   "*": (a, b) => a * b,
   "/": (a, b) => a / b,
 }
+
+let user = {
+  firstInput: 0,
+  secondInput: 0,
+  operator: "",
+}
