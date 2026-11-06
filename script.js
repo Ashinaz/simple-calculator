@@ -51,3 +51,6 @@ for(let operator of operators){
   })
 }
 const backBtn = document.querySelector(".back.input")
+backBtn.addEventListener("click", () => {
+  result.textContent = result.textContent.slice(0, -1)
+})
