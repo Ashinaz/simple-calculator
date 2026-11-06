@@ -24,3 +24,4 @@ let user = {
 }
 
 const equal = document.querySelector(".equal.input")
+equal.addEventListener("click", operate)
