@@ -65,3 +65,18 @@ function clearInput(){
     operator: "",
   }
 }
+
+function operate(){
+  user.secondInput = Number(result.textContent)
+  if(user.secondInput === 0 && user.operator === "/"){
+    alert("DIVIDING BY ZERO IS NOT ALLOWED")
+    clearInput()
+  }else {
+    if(user.firstInput === 0||
+    user.secondInput === 0 || 
+    user.operator === "") {return}
+    result.textContent = mathOperation[user.operator](user.firstInput, user.secondInput)
+    console.log(`Operation performed: ${user.firstInput} ${user.operator} ${user.secondInput}`)
+    user.firstInput = Number(result.textContent)
+  }
+}
