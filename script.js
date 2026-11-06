@@ -57,3 +57,11 @@ const backBtn = document.querySelector(".back.input")
 backBtn.addEventListener("click", () => {
   result.textContent = result.textContent.slice(0, -1)
 })
+
+function clearInput(){
+  user = {
+    firstInput: 0,
+    secondInput: 0,
+    operator: "",
+  }
+}
