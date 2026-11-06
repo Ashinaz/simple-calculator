@@ -28,3 +28,5 @@ equal.addEventListener("click", operate)
 
 const clearBtn = document.querySelector(".clear.input")
 clearBtn.addEventListener("click", clearInput)
+
+const dotBtn = document.querySelector(".dot.input")
