@@ -34,3 +34,5 @@ dotBtn.addEventListener("click", e => {
   dotBtn.disabled = true
   result.textContent += "."
 })
+
+const operators = document.querySelectorAll(".operator.input")
