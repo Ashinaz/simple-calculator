@@ -50,3 +50,4 @@ for(let operator of operators){
     }
   })
 }
+const backBtn = document.querySelector(".back.input")
