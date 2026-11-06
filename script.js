@@ -22,3 +22,5 @@ let user = {
   secondInput: 0,
   operator: "",
 }
+
+const equal = document.querySelector(".equal.input")
