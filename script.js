@@ -30,3 +30,7 @@ const clearBtn = document.querySelector(".clear.input")
 clearBtn.addEventListener("click", clearInput)
 
 const dotBtn = document.querySelector(".dot.input")
+dotBtn.addEventListener("click", e => {
+  dotBtn.disabled = true
+  result.textContent += "."
+})
