@@ -9,3 +9,10 @@ for(let number of numbers) {
 
 const clear = document.querySelector(".clear.input")
 clear.addEventListener("click", () => {result.textContent = ""})
+
+const mathOperation = {
+  "+": (a, b) => a + b,
+  "-": (a, b) => a - b,
+  "*": (a, b) => a * b,
+  "/": (a, b) => a / b,
+}
