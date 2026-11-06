@@ -36,3 +36,17 @@ dotBtn.addEventListener("click", e => {
 })
 
 const operators = document.querySelectorAll(".operator.input")
+for(let operator of operators){
+  operator.addEventListener("click", e => {
+    dotBtn.disabled = false
+    if (user.firstInput === 0){
+      user.operator = e.target.value
+      user.firstInput = Number(result.textContent)
+      result.textContent = ""
+    }else {
+      console.log("Operate used early/acc")
+      operate()
+      user.operator = e.target.value
+    }
+  })
+}
